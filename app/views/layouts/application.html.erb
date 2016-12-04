@@ -19,11 +19,17 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a href="/" class="navbar-brand">FuturDev</a>
+
         </div>
         <div class="collapse navbar-collapse" id="main-nav-collapse">
+        <%= link_to root_path, class: "navbar-brand" do %>
+          <i class="fa fa-diamond"></i>
+          FuturDev
+        <% end %>
+          
           <ul class="nav navbar-nav navbar-right">
-            <li><a href="/about">about</a></li>
+            <li><%= link_to "about", about_path %>
+            </li>
           </ul>
         </div><!-- /.navbar-collapse -->
       </div>
